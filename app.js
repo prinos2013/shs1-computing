@@ -15,7 +15,35 @@ const lessons = [
           <h3>1.6 - 1.8 Media Representation</h3>
           <p>Computers represent images using tiny units called pixels[cite: 2]. A bitmap is a grid of binary data that represents the color values of pixels[cite: 2]. Sound occurs as an analog signal, so to store sound, computers take rapid "snapshots" (samples) of the sound wave at fixed intervals to convert it to digital[cite: 2]. Digital video is a collection of still images (frames) arranged in a specific order and displayed at high speed[cite: 2].</p>
           <h3>1.9 - 1.10 Files and Transmission</h3>
-          <p>A file format is a standard way that information is encoded for storage, dictating how bits are arranged and read by software[cite: 2]. When transmitting data over a network, the computer splits the data into smaller, manageable chunks called Packets to prevent clogging the network[cite: 2].</p>
+          <p>A file format is a standard way that information is encoded for storage, dictating how bits are arranged and read by software[cite: 2].</p>
+          <table>
+            <tr>
+              <th>CATEGORY</th>
+              <th>COMMON EXTENSIONS</th>
+              <th>DESCRIPTION</th>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>.JPEG / .JPG</td>
+              <td>Used for photographs[cite: 2]</td>
+            </tr>
+            <tr>
+              <td>Word Processing</td>
+              <td>.DOC / .DOCX</td>
+              <td>Used by Microsoft Word. Stores text, formatting, and images[cite: 2].</td>
+            </tr>
+            <tr>
+              <td>Spreadsheets</td>
+              <td>.XLS / .XLSX</td>
+              <td>Used by Microsoft Excel. Stores grids, formulas, and charts[cite: 2].</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>.MP4 (MPEG-4)</td>
+              <td>The most widely used format today[cite: 2].</td>
+            </tr>
+          </table>
+          <p>When transmitting data over a network, the computer splits the data into smaller, manageable chunks called Packets to prevent clogging the network[cite: 2].</p>
         `
       },
       {
@@ -91,7 +119,61 @@ const lessons = [
           <h3>9.0 Introduction to Networks</h3>
           <p>A computer network connects two or more computers to facilitate communication and share resources like printers and internet access[cite: 2]. Components include Switches, Routers, Network Interface Cards (NICs), and Firewalls[cite: 2].</p>
           <h3>10.0 Network Systems & Topologies</h3>
-          <p>Networks are classified by geography: PAN (Personal), LAN (Local), MAN (Metropolitan), and WAN (Wide Area)[cite: 2]. Topologies define the physical arrangement, including Bus, Star, Ring, Mesh, and Tree[cite: 2].</p>
+          <p>Computer networks are generally classified based on their geographical scope, known as Area Networks[cite: 2].</p>
+          <table>
+            <tr>
+              <th>Criterion</th>
+              <th>LAN (Local Area Network)</th>
+              <th>MAN (Metropolitan)</th>
+              <th>WAN (Wide Area Network)</th>
+            </tr>
+            <tr>
+              <td>Area</td>
+              <td>Small geographic range (e.g., room/building)[cite: 2]</td>
+              <td>Larger than LAN; covers small towns/cities[cite: 2]</td>
+              <td>Very large area; spans countries/continents[cite: 2]</td>
+            </tr>
+            <tr>
+              <td>Speed</td>
+              <td>High transmission speed[cite: 2]</td>
+              <td>Moderate transmission speed[cite: 2]</td>
+              <td>Low transmission speed[cite: 2]</td>
+            </tr>
+            <tr>
+              <td>Fault Tolerance</td>
+              <td>High (more resilient)[cite: 2]</td>
+              <td>Moderate (less than LAN)[cite: 2]</td>
+              <td>Low (less than LAN)[cite: 2]</td>
+            </tr>
+          </table>
+          <p>Topology refers to the physical or logical arrangement of how devices and connections are laid out[cite: 2].</p>
+          <table>
+            <tr>
+              <th>Topology</th>
+              <th>Description</th>
+              <th>Advantage</th>
+            </tr>
+            <tr>
+              <td>Bus</td>
+              <td>All devices connect to a single central cable[cite: 2].</td>
+              <td>Simple and inexpensive to set up[cite: 2].</td>
+            </tr>
+            <tr>
+              <td>Star</td>
+              <td>All devices connect to a central hub or switch[cite: 2].</td>
+              <td>Easy to manage; one device failing doesn't affect the rest[cite: 2].</td>
+            </tr>
+            <tr>
+              <td>Ring</td>
+              <td>Devices connect in a closed loop; data travels in one direction[cite: 2].</td>
+              <td>Logical and orderly data transmission[cite: 2].</td>
+            </tr>
+            <tr>
+              <td>Mesh</td>
+              <td>Every device is connected to every other device[cite: 2].</td>
+              <td>Very reliable and has high fault tolerance[cite: 2].</td>
+            </tr>
+          </table>
           <h3>11.0 Architecture & OSI Model</h3>
           <p>Network architectures are generally Client-Server (centralized management) or Peer-to-Peer (decentralized equal devices)[cite: 2]. The OSI Model standardizes communication into 7 layers: Application, Presentation, Session, Transport, Network, Data Link, and Physical[cite: 2].</p>
           <h3>12.0 Network Connections</h3>
@@ -142,8 +224,41 @@ const lessons = [
         id: "19.0",
         title: "19.0 - 21.0 Python Programming",
         notes: `
-          <h3>19.0 Programming Basics</h3>
-          <p>Python is a high-level language requiring an Integrated Development Environment (IDE)[cite: 2]. Core functions include <code>print()</code> for output and <code>input()</code> for user data entry[cite: 2]. Comparison operators (==, !=, >, <) evaluate to True or False[cite: 2].</p>
+         <h3>19.0 Programming Basics</h3>
+          <p>Python is a high-level language requiring an Integrated Development Environment (IDE)[cite: 2]. Core functions include <code>print()</code> for output and <code>input()</code> for user data entry[cite: 2].</p>
+          <p>Comparison operators are used to compare two values, resulting in a Boolean value (True or False)[cite: 2]:</p>
+          <table>
+            <tr>
+              <th>Operator</th>
+              <th>Meaning</th>
+              <th>Example</th>
+              <th>Result</th>
+            </tr>
+            <tr>
+              <td>==</td>
+              <td>Equal to (Do not confuse with = which assigns values)[cite: 2]</td>
+              <td>5 == 5[cite: 2]</td>
+              <td>True[cite: 2]</td>
+            </tr>
+            <tr>
+              <td>!=</td>
+              <td>Not equal to[cite: 2]</td>
+              <td>5 != 3[cite: 2]</td>
+              <td>True[cite: 2]</td>
+            </tr>
+            <tr>
+              <td>&gt;</td>
+              <td>Greater than[cite: 2]</td>
+              <td>10 &gt; 20[cite: 2]</td>
+              <td>False[cite: 2]</td>
+            </tr>
+            <tr>
+              <td>&lt;</td>
+              <td>Less than[cite: 2]</td>
+              <td>4 &lt; 9[cite: 2]</td>
+              <td>True[cite: 2]</td>
+            </tr>
+          </table>
           <h3>20.0 Algorithm Implementation</h3>
           <p>Implementation translates logical steps into actual code[cite: 2]. The Swap Algorithm requires a temporary variable (temp = a, a = b, b = temp) so data is not lost[cite: 2].</p>
           <h3>21.0 Arrays in Python</h3>
